@@ -68,7 +68,19 @@ public static void Money_Thousand(double cash)
 
         }
         Console.WriteLine("10: {0}",i);
+       Money_Five(Money);
+    }
+     public static void Money_Five(double Money)
+    {
+        int i;
+        for(i =0 ; Five_Check(Money); i++)
+        {
+            Money = Money-5;
+
+        }
+        Console.WriteLine("5: {0}",i);
        Money_two(Money);
+       
     }
     public static void Money_two(double Money)
     {
@@ -140,9 +152,13 @@ public static void Money_Thousand(double cash)
     {
         return logic < 20 && logic >=10;
     }
+     public static bool Five_Check(double logic)
+    {
+        return logic < 10 && logic >=5;
+    }
     public static bool Two_Check(double logic)
     {
-        return logic < 10 && logic >=2;
+        return logic < 5 && logic >=2;
     }
     public static bool One_Check(double logic)
     {

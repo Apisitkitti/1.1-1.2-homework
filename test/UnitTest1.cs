@@ -62,9 +62,16 @@ public class UnitTest1
         Assert.False(Calculator.Ten_Check(money));
     }
     [Fact]
-     public void CheckBoolTwotrue()
+     public void CheckBoolFivetrue()
     {
         int money = 5;
+        Assert.True(Calculator.Five_Check(money));
+    }
+
+    [Fact]
+     public void CheckBoolTwotrue()
+    {
+        int money = 2;
         Assert.True(Calculator.Two_Check(money));
     }
     [Fact]
